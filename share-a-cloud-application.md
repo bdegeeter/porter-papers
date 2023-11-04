@@ -38,11 +38,11 @@ CNAB bundles are composed of several components, including:
 * Dependencies of the application, which can also be packaged as container images or collections of files.
 * Installation instructions, which are used to deploy the application and its dependencies to a cloud platform.
 
-One of the key benefits of CNAB bundles is that they provide a single, portable package for distributing cloud native applications. This makes it easier for developers to deploy their applications to different cloud platforms, as the application and its dependencies are all contained within the NAB bundle.
+One of the key benefits of CNAB bundles is that they provide a single, portable package for distributing cloud native applications. This makes it easier for developers to deploy their applications to different cloud platforms, as the application and its dependencies are all contained within the CNAB bundle.
 
 CNAB bundles also have built-in security features, such as cryptographic signing and verification, to ensure the integrity and authenticity of the bundle. This helps to prevent tampering or modification of the bundle during the distribution process
 
-In addition, NAB bundles are designed to be extensible, allowing developers to add custom metadata and functionality to their bundles. This enables developers to include additional information and instructions that are specific to their applications, such as configuration settings or post-installation steps.
+In addition, CNAB bundles are designed to be extensible, allowing developers to add custom metadata and functionality to their bundles. This enables developers to include additional information and instructions that are specific to their applications, such as configuration settings or post-installation steps.
 
 Overall, CAB bundles provide a flexible and secure way to distribute cloud native applications, making it easier for developers to deploy and manage their applications across different cloud platforms.
 
