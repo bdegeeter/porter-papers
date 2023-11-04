@@ -1,5 +1,7 @@
 # So, you want to share a cloud application?
 
+by [Brian DeGeeter](https://github.com/bdegeeter) and [Steven Gettys](https://github.com/sgettys)
+
 We've all been there. You've done all the work to create a GitHub repo with the code needed to show off some cool new cloud application architecture. We all know there's never one tool to rule them all. It's a bit of Terraform, a healthy dose of Ansible, and of course some Bash to connect it all together.
 
 You've done your homework and tested everything out. Deployed it countless times from your laptop. Then you get it out there for others to see. You're waiting to get that feedback from Someone asking about the solution or comment about how it solves their problem. But that's not what you hear first. Instead, it's, "I'm getting a Terraform error, can you help me troubleshoot?"
