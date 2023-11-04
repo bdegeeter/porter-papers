@@ -57,7 +57,7 @@ Porter is a [CNCF project](https://landscape.cncf.io/?selected=porter) implement
 There has been an explosion of choices in tooling all with the same goal in mind, automate the deployment of your cloud architecture with an application solution. CAB bundles provide a common interface for any arbitrary Infrastructure as Code (laC) tooling.
 
 
-[INSERT DEVELOPERS CHOICE DIAGRAM ]
+<!-- [INSERT DEVELOPERS CHOICE DIAGRAM ] -->
 
 A CNAB Bundle not only contains your laC, but also the runtime environment for execution. From a user's perspective it doesn't matter what tools are needed. The bundle publisher selects the best choice and doesn't need to worry about what's installed on the bundle installer's system
 
@@ -122,7 +122,7 @@ There are many benefits Porter can provide when creating cloud-native applicatio
 * Air-gapped installations provide higher security and the ability to know exactly what will be installed every time. A bundle can be developed and approved by a security team and then installed with confidence knowing that versions of packages and libraries will not be inadvertently updated at runtime.
 * Bundles can be combined into a single bundle allowing for a more reliable delivery of the full application platform.
 
-[INSERT DIAGRAM]
+<!-- [INSERT BUNDLE DEPS DIAGRAM] -->
 
 ## The Value of Porter
 
