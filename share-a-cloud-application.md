@@ -114,7 +114,7 @@ The bundle definition file sets docker as a requirement which translates to the 
 
 #### Porter Argo Demo
 
-Really want to dive deep? Check out the [Porter Argo Demo](https://github.com/bdegeeter/porter-argo-demo). This repo has everything you need to run the [Porter Operator](https://porter.sh/docs/operator/) with [Argo Workflows](https://argoproj.github.io/argo-workflows/) to see the operator in action with [Jaeger](https://www.jaegertracing.io/) and [OpenTelemery](https://opentelemetry.io/) to for observability 
+Really want to dive deep? Check out the [Porter Argo Demo](https://github.com/bdegeeter/porter-argo-demo). This repo has everything you need to run the [Porter Operator](https://porter.sh/docs/operator/) with [Argo Workflows](https://argoproj.github.io/argo-workflows/) to see the operator in action with [Jaeger](https://www.jaegertracing.io/) and [OpenTelemery](https://opentelemetry.io/) for observability 
 
 It's important to take away that Porter and CNAB bundles don't replace how your automation works. Instead, it provides a powerful workflow for maintaining and sharing your work for all kinds of use cases.
 
