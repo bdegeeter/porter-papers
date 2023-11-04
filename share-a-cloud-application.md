@@ -4,11 +4,11 @@ by [Brian DeGeeter](https://github.com/bdegeeter) and [Steven Gettys](https://gi
 
 We've all been there. You've done all the work to create a GitHub repo with the code needed to show off some cool new cloud application architecture. We all know there's never one tool to rule them all. It's a bit of Terraform, a healthy dose of Ansible, and of course some Bash to connect it all together.
 
-You've done your homework and tested everything out. Deployed it countless times from your laptop. Then you get it out there for others to see. You're waiting to get that feedback from Someone asking about the solution or comment about how it solves their problem. But that's not what you hear first. Instead, it's, "I'm getting a Terraform error, can you help me troubleshoot?"
+You've done your homework and tested everything out. Deployed it countless times from your laptop. Then you get it out there for others to see. You're waiting to get that feedback from someone asking about the solution or comment about how it solves their problem. But that's not what you hear first. Instead, it's, "I'm getting a Terraform error, can you help me troubleshoot?"
 
 It's always something simple. The terraform code did not declare a specific version for compatibility with the user's version or the wrong version of python is installed for the Ansible role. At the end of the day, it becomes the gap between that first experience you were hoping someone would have and an environmental issue.
 
-This is where [Porter](https://getporter.org/) and [CNAB](https://cnab.io/) bundles come into play. Don't worry this is not about replacing the arduous work you've already done. It's about packaging it such that it's easier for vou to maintain and for your users to engage. No more having to worry about the environment your DevOps code runs in. [Porter](https://getporter.org/) provides an opinionated workflow for packaging a versioned instance of your cloud deployment
+This is where [Porter](https://getporter.org/) and [CNAB](https://cnab.io/) bundles come into play. Don't worry this is not about replacing the arduous work you've already done. It's about packaging it such that it's easier for you to maintain and for your users to engage. No more having to worry about the environment your DevOps code runs in. [Porter](https://getporter.org/) provides an opinionated workflow for packaging a versioned instance of your cloud deployment
 
 No more confusion for your users as well. The same [Porter](https://getporter.org/) command line tool used by a maintainer for ownership of a cloud deployment is used to deploy. Your users can install your cloud architecture with just a reference to a versioned OC (docker) container image.
 
@@ -18,13 +18,13 @@ No need to worry about tool dependencies, just run:
 porter install reference github.com/bdegeeter/JoyOfNginx/Nginx-OSS:v0.1.0
 ```
 
-Now vou'll end up right where the bundle maintainer expects you to be.
+Now you'll end up right where the bundle maintainer expects you to be.
 
 ## What is a Cloud Native Application?
 
 At its heart, a cloud native application is one expected to be deployed via code. This can be on any of the well-known public clouds (Azure, AWS, GCP, etc.). It also encompasses private cloud platforms like an on prem VMware cluster.
 
-Depending on one's needs this can be the deployment of a SaaS workload on a pre-existing cloud Kubernetes instance. However, it can also encompass a full stack platform with an opinionated deployment of compute, networking, storage, lAM, and more. And while we are talking specifically about cloud native, Porter can really help with anything that could be fully automated and run in a Docker container
+Depending on one's needs this can be the deployment of a SaaS workload on a pre-existing cloud Kubernetes instance. However, it can also encompass a full stack platform with an opinionated deployment of compute, networking, storage, IAM, and more. And while we are talking specifically about cloud native, Porter can really help with anything that could be fully automated and run in a Docker container
 
 ## What is CNAB/Porter?
 
@@ -44,22 +44,22 @@ CNAB bundles also have built-in security features, such as cryptographic signing
 
 In addition, CNAB bundles are designed to be extensible, allowing developers to add custom metadata and functionality to their bundles. This enables developers to include additional information and instructions that are specific to their applications, such as configuration settings or post-installation steps.
 
-Overall, CAB bundles provide a flexible and secure way to distribute cloud native applications, making it easier for developers to deploy and manage their applications across different cloud platforms.
+Overall, CNAB bundles provide a flexible and secure way to distribute cloud native applications, making it easier for developers to deploy and manage their applications across different cloud platforms.
 
 ### Porter
 
-Porter is a [CNCF project](https://landscape.cncf.io/?selected=porter) implementing the [CNAB](https://cnab.io/) specification. It provides a CLI to create, publish, install, and maintain CNABs. Porter provides a consistent, platform-agnostic way to deploy and manage cloud native applications, making it easier to automate and manage the lifecycle of your applications.
+Porter is a [CNCF project](https://landscape.cncf.io/?selected=porter) implementing the [CNAB](https://cnab.io/) specification. It provides a CLI and [Kubernetes Operator](https://github.com/getporter/operator) to create, publish, install, and maintain CNABs. Porter provides a consistent, platform-agnostic way to deploy and manage cloud native applications, making it easier to automate and manage the lifecycle of your applications.
 
 ## Problems Facing Modern Cloud Solution
 
 ### Embarrassment of Riches
 
-There has been an explosion of choices in tooling all with the same goal in mind, automate the deployment of your cloud architecture with an application solution. CAB bundles provide a common interface for any arbitrary Infrastructure as Code (laC) tooling.
+There has been an explosion of choices in tooling all with the same goal in mind, automate the deployment of your cloud architecture with an application solution. CNAB bundles provide a common interface for any arbitrary Infrastructure as Code (IaC) tooling.
 
 
 <!-- [INSERT DEVELOPERS CHOICE DIAGRAM ] -->
 
-A CNAB Bundle not only contains your laC, but also the runtime environment for execution. From a user's perspective it doesn't matter what tools are needed. The bundle publisher selects the best choice and doesn't need to worry about what's installed on the bundle installer's system
+A CNAB Bundle not only contains your IaC, but also the runtime environment for execution. From a user's perspective it doesn't matter what tools are needed. The bundle publisher selects the best choice and doesn't need to worry about what's installed on the bundle installer's system
 
 ### Simplify and Speed Up Deployments
 
